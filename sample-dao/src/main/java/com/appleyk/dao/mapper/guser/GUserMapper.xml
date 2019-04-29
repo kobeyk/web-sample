@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.appleyk.dao.mapper.guser.GUserMapper">
+
+    <resultMap type="com.appleyk.dao.entity.GUserEntity" id="userEntityMap">
+        <id property="id" column="id"/>
+        <result property = "name" column = "name"/>
+        <result property = "avatar" column = "avatar"/>
+        <result property = "telPhone" column = "telphone"/>
+        <result property="cTime" column="ctime"/>
+        <result property="role" column="role"/>
+    </resultMap>
+
+    <sql id="TABLE_COLUMNS">
+        id,
+        name,
+        avatar,
+        telphone,
+        ctime,
+        role
+	</sql>
+
+</mapper>

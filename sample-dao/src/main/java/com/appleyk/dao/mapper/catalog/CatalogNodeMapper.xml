@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.appleyk.dao.mapper.catalog.CatalogNodeMapper">
+
+    <resultMap type="com.appleyk.dao.entity.CatalogNodeEntity" id="catalogNodeEntityMap">
+        <id property="id" column="id"/>
+        <result property = "name" column = "name"/>
+        <result property = "oId" column = "oid"/>
+        <result property = "catalogId" column = "catalogid"/>
+        <result property="cTime" column="ctime"/>
+        <result property="mTime" column="mtime"/>
+    </resultMap>
+
+    <sql id="TABLE_COLUMNS">
+        id,
+        name,
+        oid,
+        catalogid,
+        ctime,
+        mtime,
+	</sql>
+
+    <update id="updateCatalogNode" parameterType="com.appleyk.dao.entity.CatalogEntity">
+        update yk_catalog_node set
+        name = #{catalogNode.name},catalogid = #{catalogNode.catalogId},
+        mtime = #{catalogNode.mTime}
+        where id = #{catalogNode.id}
+    </update>
+
+</mapper>
