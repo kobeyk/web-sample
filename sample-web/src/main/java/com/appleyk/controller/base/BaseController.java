@@ -6,7 +6,7 @@ import com.appleyk.core.model.GObject;
 import com.appleyk.core.utils.GeneralUtils;
 
 /**
- * <p>抽象一个控制器的基类，目的是校验一些请求参数值（可控）</p>
+ * <p>抽离一个控制器的基类，目的是校验一些请求参数值（可控）</p>
  *
  * @author appleyk
  * @version V.1.0.0
