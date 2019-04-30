@@ -23,4 +23,9 @@ SpringBoot2.1.4 + 数据持久层通用web后端脚手架
 
        你可以通过博文末尾提供的GitHub项目的仓库地址，下载到本地，细细品味一下，如果有不对或者不懂的地方，欢迎留言一起沟通，如果你觉得本项目值得参考，或者在你实际的项目或产品开发中帮助很大的话，我的目的就到达了！
 
-        
+
+
+     作者：Appleyk
+     博客：https://blog.csdn.net/appleyk
+     本篇博客地址：https://blog.csdn.net/Appleyk/article/details/89681059
+     
