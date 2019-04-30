@@ -10,6 +10,9 @@ package com.appleyk.core.common;
  */
 public class RequestMappingConstant {
 
+    /**
+     * 业务系统的根地址
+     */
     public static final String ROOT_MAPPING_VALUE = "/sample";
     public static final String CREATE_MAPPING_VALUE = "/create";
     public static final String DELETE_MAPPING_VALUE = "/delete";

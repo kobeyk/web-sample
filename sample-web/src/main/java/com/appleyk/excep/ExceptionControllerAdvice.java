@@ -4,9 +4,10 @@ import com.appleyk.core.common.ResponseResult;
 import com.appleyk.core.common.ex.CommonException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * <p>拦截控制器Controller异常，并进行统一处理</p>
@@ -20,15 +21,6 @@ import org.springframework.web.bind.annotation.*;
 @RestControllerAdvice
 public class ExceptionControllerAdvice {
 
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-
-    }
-
-    @ModelAttribute
-    public void addAttributes(Model model) {
-    }
-
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity errorHandler(Exception ex) {
@@ -36,7 +28,8 @@ public class ExceptionControllerAdvice {
             CommonException commonException = (CommonException) ex;
             return ResponseEntity.ok(commonException.buildResult());
         }
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ResponseResult.fail(ex.getMessage()));
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(ResponseResult.fail(ex.getMessage()));
     }
 }
 

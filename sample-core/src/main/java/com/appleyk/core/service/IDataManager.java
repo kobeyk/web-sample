@@ -5,10 +5,10 @@ import com.appleyk.core.common.ex.CommonException;
 /**
  * <p>通用数据增删改接口</p>
  *
- * @author yukun24@126.com
- * @version V.1.0.1
- * @company 苏州中科蓝迪
- * @date created on 下午 2:21 2019-4-18
+ * @author appleyk
+ * @version V.1.0.0
+ * @blob https://blog.csdn.net/appleyk
+ * @date created on 下午 2:28 2019-4-27
  */
 public interface IDataManager<T> {
 

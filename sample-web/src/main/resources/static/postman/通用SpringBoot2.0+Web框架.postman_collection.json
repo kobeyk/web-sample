@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "657266e3-2097-475f-9cc1-d8ad2b51bdb1",
+		"name": "通用SpringBoot2.0+Web框架",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello测试",
+			"item": [
+				{
+					"name": "hello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/hello"
+					},
+					"response": []
+				},
+				{
+					"name": "通用异常测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/excep"
+					},
+					"response": []
+				},
+				{
+					"name": "自定义异常测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/excep/my"
+					},
+					"response": []
+				},
+				{
+					"name": "用户令牌认证",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/token"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "目录",
+			"item": [
+				{
+					"name": "创建目录",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"PostgreSql用户组\",\n    \"parentId\": 0\n}\n"
+						},
+						"url": "{{sampleUrl}}/catalog/create/0"
+					},
+					"response": []
+				},
+				{
+					"name": "更新目录",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/catalog/update"
+					},
+					"response": []
+				},
+				{
+					"name": "查询目录",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查询树根",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/catalog/root/query"
+					},
+					"response": []
+				},
+				{
+					"name": "删除目录",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/catalog/delete/10004"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "目录节点",
+			"item": [
+				{
+					"name": "创建节点",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"catalogId\":10003,\n\t\"obj\": {\n        \"id\": 10004,\n        \"name\": \"appleyk\"\n    }\n}"
+						},
+						"url": "{{sampleUrl}}/catalog/node/create"
+					},
+					"response": []
+				},
+				{
+					"name": "更新节点",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/catalog/node/update"
+					},
+					"response": []
+				},
+				{
+					"name": "删除节点",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/catalog/node/delete/10002"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "用户",
+			"item": [
+				{
+					"name": "创建用户",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"appleyk\",\n\t\"avatar\":\"http://xxx.tx.jpg\",\n\t\"telPhone\":\"123456789\"\n}"
+						},
+						"url": "{{sampleUrl}}/user/create"
+					},
+					"response": []
+				},
+				{
+					"name": "删除用户",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{sampleUrl}}/user/delete"
+					},
+					"response": []
+				},
+				{
+					"name": "更新用户",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":10001,\n\t\"name\":\"appleyk00\",\n\t\"avatar\":\"http://xxx.tx.jpg\",\n\t\"telPhone\":\"123456789\"\n}"
+						},
+						"url": "{{sampleUrl}}/user/update"
+					},
+					"response": []
+				},
+				{
+					"name": "查询用户",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{sampleUrl}}/user/query?name=appleyk",
+							"host": [
+								"{{sampleUrl}}"
+							],
+							"path": [
+								"user",
+								"query"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "appleyk"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
