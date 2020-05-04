@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.appleyk</groupId>
     <artifactId>web-sample</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
     <modules>
         <module>sample-core</module>
         <module>sample-service</module>
@@ -13,7 +13,7 @@
     </modules>
     <name>web-sample</name>
     <packaging>pom</packaging>
-    <description>SpringBoot2.1.4 + 数据持久化通用web后端脚手架</description>
+    <description>SpringBoot2.1.4 + Mybatis数据持久层通用Web后端脚手架</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -32,7 +32,7 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <junit.version>4.12</junit.version>
         <servlet-api.version>3.1.0</servlet-api.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.10.0</jackson.version>
         <!--PageHelper Spring Boot Starter-->
         <pagehelper.version>1.2.10</pagehelper.version>
         <!--Mybatis 通用 Mapper Jar 集成-->
