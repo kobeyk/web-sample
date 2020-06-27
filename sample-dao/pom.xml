@@ -5,7 +5,7 @@
     <parent>
         <artifactId>web-sample</artifactId>
         <groupId>com.appleyk</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.1.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>sample-dao</artifactId>
@@ -23,7 +23,7 @@
         <dependency>
             <groupId>com.appleyk</groupId>
             <artifactId>sample-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.1.1-SNAPSHOT</version>
         </dependency>
 
         <!-- postgresql -->
