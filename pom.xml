@@ -32,7 +32,7 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <junit.version>4.12</junit.version>
         <servlet-api.version>3.1.0</servlet-api.version>
-        <jackson.version>2.10.0</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <!--PageHelper Spring Boot Starter-->
         <pagehelper.version>1.2.10</pagehelper.version>
         <!--Mybatis 通用 Mapper Jar 集成-->
